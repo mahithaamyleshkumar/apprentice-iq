@@ -1,0 +1,1267 @@
+# MASTER WEBSITE DEVELOPMENT PROMPT
+# APPRENTICE IQ — THE FUTURE OF VOCATIONAL SKILL INTELLIGENCE
+
+Act as a world-class product designer, UI/UX architect, senior full-stack engineer, AI/ML engineer, database architect and cybersecurity specialist.
+
+Your task is to design and build **APPRENTICE IQ**, a premium, fully functional, AI-powered vocational learning, practical skill assessment and digital skill verification platform.
+
+Do not build a generic LMS. Build an exceptional, industry-ready product that makes users and hackathon judges immediately understand its value.
+
+---
+
+# 1. PRODUCT IDENTITY
+
+**Product:** APPRENTICE IQ
+
+**Tagline:** Proof of Skill. Not Just Proof of Training.
+
+**Positioning:** The AI-powered intelligence layer between vocational training and employment.
+
+**Mission:** Help vocational learners develop real-world skills, demonstrate their abilities, receive credible assessments and prove their competencies to employers.
+
+### Core product philosophy
+
+Traditional learning platforms measure course completion.
+
+APPRENTICE IQ measures the journey from learning to actual competency.
+
+The central product journey is:
+
+**LEARN → UNDERSTAND → PRACTISE → DEMONSTRATE → VERIFY → PROVE**
+
+The platform must distinguish between:
+
+- Learned: the apprentice completed relevant learning.
+- Practised: the apprentice completed practice activities.
+- Demonstrated: the apprentice submitted practical evidence.
+- Verified: an authorised mentor or assessor approved the competency.
+
+Never treat video completion, quiz scores or AI-generated feedback as independent proof of practical competence.
+
+---
+
+# 2. VISUAL IDENTITY — MAKE IT EXCEPTIONAL
+
+This is one of the most important requirements.
+
+Create a premium, futuristic, sophisticated visual experience inspired by the quality of products such as Linear, Vercel, Stripe, Raycast, Notion and modern AI enterprise platforms.
+
+Do not copy their interfaces. Create a unique APPRENTICE IQ identity.
+
+### Design concept: Intelligent Industrial Futurism
+
+The visual experience should communicate:
+
+- Intelligence.
+- Precision.
+- Trust.
+- Technical expertise.
+- Professional education.
+- Real-world employability.
+
+### Colour palette
+
+Use a consistent design system:
+
+- Primary background: Midnight navy (#080D19).
+- Secondary background: Deep navy (#0E1628).
+- Elevated surfaces: (#131F35).
+- Primary accent: Electric cyan (#39D9FF).
+- Secondary accent: Vivid blue (#537CFF).
+- Supporting accent: Soft violet (#9A83FF).
+- Success: Emerald green.
+- Warning: Warm amber.
+- Error: Muted coral red.
+- Primary text: Soft white (#F4F7FC).
+- Secondary text: Slate grey (#96A4BA).
+
+Use gradients selectively for hero sections, selected navigation states and important AI components.
+
+Avoid excessive neon, glowing borders, oversized gradients and unnecessary glassmorphism.
+
+### Typography
+
+Use a sophisticated combination such as:
+
+- Inter or Geist for interface text.
+- Manrope for headings.
+- A monospaced font for technical identifiers, evidence timestamps and competency IDs.
+
+Typography should have clear hierarchy and excellent readability.
+
+### Design components
+
+Create a reusable design system containing:
+
+- Premium navigation sidebar.
+- Collapsible sidebar.
+- Top navigation bar.
+- Search interface.
+- Notification centre.
+- Profile menu.
+- Metric cards.
+- Interactive charts.
+- Data tables.
+- Filter controls.
+- Status indicators.
+- Progress indicators.
+- AI assistant panels.
+- Video assessment workspaces.
+- Evidence timelines.
+- Competency visualisations.
+- Confirmation dialogs.
+- Toast notifications.
+- Loading skeletons.
+- Empty states.
+- Error states.
+
+### Animation and interactions
+
+Use Framer Motion for purposeful animations:
+
+- Smooth page transitions.
+- Animated sidebar interactions.
+- Subtle card hover effects.
+- Animated progress indicators.
+- Number counters.
+- Interactive charts.
+- Skill map transitions.
+- AI processing animations.
+- Video analysis timeline animations.
+- Modal transitions.
+- Micro-interactions on buttons.
+
+Use GSAP only when a more complex cinematic sequence genuinely requires it.
+
+Animations must feel polished and fast. Never compromise usability.
+
+### Responsive design
+
+The entire application must work on:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Create proper responsive layouts rather than simply shrinking desktop elements.
+
+### Theme
+
+Support both dark and light themes. Dark mode should be the primary visual experience.
+
+---
+
+# 3. TECHNOLOGY STACK
+
+Use the following stack unless a technical limitation requires a documented alternative.
+
+### Frontend
+
+- React.
+- TypeScript.
+- Vite.
+- Tailwind CSS.
+- Framer Motion.
+- Lucide React.
+- Recharts.
+- React Router.
+- React Hook Form.
+- Zod.
+- TanStack Query.
+
+### Backend
+
+- Python.
+- FastAPI.
+- SQLAlchemy.
+- PostgreSQL.
+- Pydantic.
+- JWT authentication.
+- Role-based access control.
+
+### AI and computer vision
+
+- Gemini API or another configurable LLM provider.
+- Speech-to-text for oral examinations.
+- Text-to-speech for spoken AI interactions.
+- OpenCV and FFmpeg for video processing.
+- YOLO for suitable object-detection tasks.
+- Embedding-based similarity analysis for evidence integrity.
+- Scikit-learn for predictive learning analytics where appropriate.
+
+### Other services
+
+- Private cloud object storage for video evidence.
+- QR code generation and verification.
+- Email notifications.
+- Browser camera and microphone APIs.
+
+Never expose API keys in frontend code.
+
+Store credentials in environment variables.
+
+Provide an `.env.example` file without real secrets.
+
+---
+
+# 4. USER ROLES AND AUTHENTICATION
+
+Implement five user roles:
+
+1. Apprentice.
+2. Mentor.
+3. Assessor.
+4. Employer.
+5. Institution Administrator.
+
+### Authentication features
+
+- Registration.
+- Login.
+- Logout.
+- Password hashing.
+- Password recovery.
+- Protected routes.
+- Role-based redirection.
+- Profile management.
+- Session management.
+- Role-based API permissions.
+
+Users must only access data and actions authorised for their roles.
+
+Create a professional authentication experience with a premium split-screen design.
+
+The left side should communicate the APPRENTICE IQ brand and product mission. The right side should contain the authentication interface.
+
+Include a visually impressive landing page with a clear call to action.
+
+---
+
+# 5. PUBLIC LANDING WEBSITE
+
+Build a stunning public-facing landing page before authentication.
+
+### Hero section
+
+Headline:
+
+**Your Skills Deserve More Than a Certificate.**
+
+Supporting text:
+
+"Learn with intelligence. Demonstrate your abilities. Get your skills verified. Build a future employers can trust."
+
+Primary CTA: Get Started.
+
+Secondary CTA: Explore the Platform.
+
+Include a sophisticated visual showing the journey from learning to skill verification.
+
+### Landing page sections
+
+1. Hero section.
+2. The skill verification problem.
+3. How APPRENTICE IQ works.
+4. AI Practical Skill Vision demonstration.
+5. Adaptive AI Oral Examination.
+6. Skill Gap Intelligence Map.
+7. Digital Skill Passport.
+8. Mentor and institution capabilities.
+9. Employer verification experience.
+10. Technology and trust.
+11. Final call to action.
+12. Professional footer.
+
+Use animated visual demonstrations, not generic stock illustrations.
+
+The landing page should immediately communicate that this is more than an LMS.
+
+---
+
+# 6. APPRENTICE PORTAL
+
+Create a dedicated apprentice dashboard.
+
+### Dashboard
+
+Display:
+
+- Welcome message.
+- Overall learning progress.
+- Current trade.
+- Learning streak.
+- Completed modules.
+- Pending lessons.
+- Upcoming assessments.
+- Verified competencies.
+- Skills requiring improvement.
+- Personalised recommendations.
+- Recent activity.
+
+Include a prominent "Continue Learning" section.
+
+### My Learning
+
+Implement:
+
+- Structured learning pathways.
+- Trade-specific modules.
+- Lessons and sublessons.
+- Video content.
+- PDF resources.
+- Illustrations.
+- Learning checkpoints.
+- Knowledge quizzes.
+- Module completion.
+- Prerequisite-based progression.
+
+Support example trades:
+
+- Electrician.
+- Fitter.
+- Welder.
+- Plumber.
+- Mechanic.
+- Computer Operator.
+- Electronics Technician.
+
+Each trade must have its own learning content, competencies and practical assessment tasks.
+
+### Learning progress rules
+
+Students must complete mandatory prerequisites before accessing dependent activities.
+
+Do not permanently block learners who struggle. Offer remedial learning and recovery plans.
+
+---
+
+# 7. CUSTOM VIDEO LEARNING PLAYER
+
+Build a professional custom video player.
+
+Features:
+
+- Play and pause.
+- Volume control.
+- Fullscreen.
+- Playback speed controls.
+- Progress bar.
+- Watched duration.
+- Remaining duration.
+- Resume playback.
+- Skip allowance indicator.
+- Assessment checkpoints.
+
+### Mandatory skip policy
+
+Implement the following configured policy:
+
+- Forward skipping is limited to 10 seconds per action.
+- Permit two forward skip actions.
+- A third forward skip triggers a warning and restarts the video from 00:00.
+- Backward seeking remains available.
+- Log playback events.
+- Record watched duration.
+- Save progress through the backend.
+- Prevent manual completion without valid completion records.
+- Make the skip allowance configurable by administrators.
+
+Enforce the policy through backend-validated playback events, not frontend state alone.
+
+Be transparent that browser-based playback restrictions cannot guarantee that a student has paid attention or prevent every external recording method.
+
+---
+
+# 8. AI VIDEO ASSESSMENT
+
+Every learning video must have an associated assessment.
+
+### Workflow
+
+1. Student starts the lesson.
+2. Video plays.
+3. Video pauses at a configured assessment timestamp.
+4. An assessment interface appears.
+5. Student receives a question based on the lesson.
+6. Student answers using text or voice.
+7. Speech is transcribed when voice is used.
+8. AI evaluates the answer.
+9. A feedback report is generated.
+10. The result is stored.
+11. Video progression resumes according to assessment rules.
+
+### Interface
+
+Create a visually impressive assessment workspace with:
+
+- Video player.
+- Question panel.
+- AI mentor avatar.
+- Microphone status.
+- Camera preview when explicitly required.
+- Recording controls.
+- Transcription.
+- Answer submission.
+- AI evaluation.
+- Feedback panel.
+
+Camera and microphone must only activate with explicit user permission and clear recording indicators.
+
+### AI evaluation criteria
+
+- Technical accuracy.
+- Conceptual understanding.
+- Correct terminology.
+- Practical understanding.
+- Problem-solving.
+- Relevance to the lesson.
+
+Show:
+
+- Student answer.
+- Expected concepts.
+- AI assessment.
+- Score.
+- Strengths.
+- Knowledge gaps.
+- Recommendations.
+
+Do not award lesson completion merely because the student opens the assessment.
+
+---
+
+# 9. AI LEARNING COPILOT
+
+Build a contextual AI learning assistant.
+
+It must understand:
+
+- Current trade.
+- Current module.
+- Current lesson.
+- Previous assessment results.
+- Known knowledge gaps.
+- Learning progress.
+
+Capabilities:
+
+- Explain difficult concepts.
+- Simplify technical terminology.
+- Provide practical examples.
+- Generate revision questions.
+- Recommend learning resources.
+- Suggest practice activities.
+- Explain incorrect answers.
+- Support regional languages.
+
+Create a beautiful conversational interface with message history, typing indicators, suggested questions and a contextual information panel.
+
+Clearly distinguish AI-generated educational guidance from official assessment decisions.
+
+---
+
+# 10. AI PRACTICAL SKILL VISION
+
+This is the signature feature of APPRENTICE IQ.
+
+Create a dedicated practical assessment workspace.
+
+### Student workflow
+
+1. Open an assigned practical task.
+2. Read the task instructions.
+3. Review required competencies.
+4. View safety guidelines.
+5. Record or upload a practical demonstration.
+6. Submit evidence.
+7. Wait for AI analysis.
+8. Review preliminary observations.
+9. Complete adaptive oral questions.
+10. Submit the assessment for mentor verification.
+
+### AI video analysis
+
+Where supported by the actual computer vision pipeline, analyse:
+
+- Visible tools.
+- Visible components.
+- Observable actions.
+- Task sequence.
+- Missing evidence.
+- Potential safety concerns.
+- Evidence quality.
+- Rubric criteria.
+
+Create timestamp-linked observations wherever technically possible.
+
+### Visual interface
+
+Use a sophisticated split-screen design:
+
+Left:
+- Submitted video.
+- Video timeline.
+- Evidence timestamps.
+
+Right:
+- AI analysis.
+- Detected objects.
+- Observed actions.
+- Rubric results.
+- Missing evidence.
+- Safety observations.
+- Confidence indicators.
+
+Use visual timeline markers to jump to relevant evidence.
+
+### Critical rule
+
+Never invent visual observations.
+
+If an action cannot be confidently observed, label it as "Insufficient Evidence" or "Requires Assessor Review".
+
+AI observations are preliminary, not final certification decisions.
+
+---
+
+# 11. ADAPTIVE AI ORAL EXAMINATION
+
+Create an AI examiner that asks questions based on the student's actual demonstration.
+
+Features:
+
+- Voice interaction.
+- Text input.
+- Speech-to-text.
+- Text-to-speech.
+- Adaptive follow-up questions.
+- Difficulty adjustment.
+- Technical answer evaluation.
+- Examination transcript.
+- Detailed feedback.
+
+Example:
+
+Trade: Electrician.
+
+Initial question: Explain the purpose of an MCB.
+
+Follow-up: What could happen if the MCB is incorrectly rated for the circuit?
+
+The next question should adapt to the student's previous response.
+
+Show:
+
+- Question number.
+- Question difficulty.
+- Voice recording state.
+- Student transcript.
+- AI feedback.
+- Competency being evaluated.
+
+Do not use exact keyword matching as the sole evaluation method.
+
+AI oral assessment cannot independently establish practical competence.
+
+---
+
+# 12. FINAL PRACTICAL ASSESSMENT
+
+Build a final assessment workflow containing:
+
+### Section A: Practical demonstration
+
+- Task assignment.
+- Task instructions.
+- Safety guidelines.
+- Evidence recording.
+- Video upload.
+- Evidence submission.
+- AI analysis.
+- Rubric evaluation.
+
+### Section B: Oral examination
+
+- Task-specific questions.
+- Adaptive follow-ups.
+- Voice or text answers.
+- Technical reasoning assessment.
+- Oral examination report.
+
+### Final report
+
+Display:
+
+- Practical assessment score.
+- Oral assessment score.
+- Competency-wise results.
+- Evidence timestamps.
+- Missing evidence.
+- Safety observations.
+- Knowledge gaps.
+- Integrity flags.
+- Mentor review status.
+
+---
+
+# 13. ASSESSMENT INTEGRITY RADAR
+
+Create an assessment integrity module.
+
+Implement where technically supported:
+
+- Duplicate file hash detection.
+- Perceptual video similarity analysis.
+- Recording metadata inspection.
+- Random recording challenges.
+- Written response similarity checks.
+- Evidence completeness checks.
+- Suspicious submission alerts.
+- Fresh assessment requests.
+
+Create a professional integrity dashboard with risk indicators and supporting evidence.
+
+Never automatically accuse, disqualify or penalise a student based on similarity scores alone.
+
+All suspicious cases must be reviewed by an authorised human.
+
+---
+
+# 14. AI SKILL GAP INTELLIGENCE MAP
+
+Build an interactive competency visualisation.
+
+Represent each competency through four states:
+
+- Learned.
+- Practised.
+- Demonstrated.
+- Verified.
+
+Use a sophisticated interactive node map or competency graph.
+
+When the student clicks a competency, display:
+
+- Competency description.
+- Learning history.
+- Practice attempts.
+- Submitted evidence.
+- Assessment observations.
+- Mentor feedback.
+- Current verification status.
+- Recommended next step.
+
+Include filters for competency category and status.
+
+Make this one of the most visually distinctive screens in the application.
+
+---
+
+# 15. PREDICTIVE LEARNING BEHAVIOUR ENGINE
+
+Analyse:
+
+- Missed lessons.
+- Repeated assessment failures.
+- Incomplete activities.
+- Inactivity.
+- Repeated knowledge gaps.
+- Learning trends.
+- Assessment performance.
+
+Create explainable risk categories:
+
+- Low Risk.
+- Medium Risk.
+- High Risk.
+
+Show the factors behind each alert.
+
+Generate personalised recommendations:
+
+- Revise a particular module.
+- Complete missed lessons.
+- Practise a specific competency.
+- Attend a mentor session.
+- Retake a knowledge checkpoint.
+
+Do not present predictions as certain outcomes or use them as automatic grounds for punishment.
+
+---
+
+# 16. MENTOR COMMAND CENTRE
+
+Build a premium mentor dashboard.
+
+### Overview metrics
+
+- Total assigned apprentices.
+- Active learners.
+- Learners falling behind.
+- Pending assessments.
+- Evidence awaiting approval.
+- Students requiring intervention.
+- Integrity alerts.
+- Competencies awaiting verification.
+- Students ready for final assessment.
+
+### Mentor functionality
+
+- Search apprentices.
+- Filter by trade.
+- View individual progress.
+- Inspect learning history.
+- Review assessment reports.
+- Watch practical demonstrations.
+- Review oral examination transcripts.
+- Inspect evidence timestamps.
+- Approve competencies.
+- Reject competencies with reasons.
+- Request reassessment.
+- Assign additional learning.
+- Provide feedback.
+
+### AI Mentor Assistant
+
+Allow mentors to ask questions such as:
+
+"Which apprentices are struggling with electrical safety?"
+
+Return evidence-based answers from authorised platform records.
+
+Every recommendation should include its supporting information.
+
+---
+
+# 17. ASSESSOR PORTAL
+
+Create:
+
+- Assessment queue.
+- Practical evidence review.
+- Competency checklist.
+- Assessment rubric.
+- Supervised assessment management.
+- Surprise challenge assignment.
+- Competency approval.
+- Reassessment workflow.
+- Assessment history.
+- Audit trail.
+
+Assessors must be able to inspect AI observations and make independent decisions.
+
+---
+
+# 18. DIGITAL SKILL PASSPORT
+
+This is the platform's signature employment outcome.
+
+Create a premium, professional digital credential.
+
+### Passport information
+
+- Apprentice name.
+- Unique passport ID.
+- Institution.
+- Vocational trade.
+- Verified competencies.
+- Competency levels.
+- Assessment history.
+- Mentor approvals.
+- Certification information.
+- Evidence references.
+- Project portfolio.
+- Issue date.
+- Verification status.
+
+### QR verification
+
+Generate a unique QR code for each approved passport.
+
+When scanned:
+
+1. Open a public verification page.
+2. Validate the passport ID with the backend.
+3. Display current verification status.
+4. Show approved competencies.
+5. Display certification details.
+6. Display authorised evidence summaries.
+7. Separate pending skills from verified skills.
+8. Show expiry or revocation status where applicable.
+
+Make the public verification page beautiful and employer-friendly.
+
+Never expose private student data or unrestricted video recordings.
+
+Do not represent platform-issued records as official government qualifications, licences or certificates unless a recognised issuing authority has actually authorised them.
+
+---
+
+# 19. EMPLOYER PORTAL
+
+Build an employer-facing talent discovery platform.
+
+Features:
+
+- Search skilled apprentices.
+- Filter by trade.
+- Filter by verified competency.
+- View Digital Skill Passports.
+- QR credential verification.
+- Compare candidates.
+- View approved portfolios.
+- View assessment summaries.
+- Contact candidates through authorised channels.
+
+The employer must be able to understand what the candidate has actually demonstrated, not just which courses they completed.
+
+---
+
+# 20. INDUSTRY PROJECT RECOMMENDATION ENGINE
+
+Recommend real-world projects based on:
+
+- Selected trade.
+- Verified competencies.
+- Practical assessment results.
+- Oral examination performance.
+- Skill gaps.
+- Learning progress.
+- Difficulty level.
+
+For each project display:
+
+- Project title.
+- Industry relevance.
+- Problem statement.
+- Tools and materials.
+- Required competencies.
+- Instructions.
+- Difficulty.
+- Expected outcome.
+- Evaluation rubric.
+- Submission requirements.
+
+Students can:
+
+- Accept projects.
+- View instructions.
+- Submit images and videos.
+- Receive AI feedback.
+- Request mentor evaluation.
+- Add approved projects to their portfolio.
+
+---
+
+# 21. INSTITUTION ADMINISTRATOR PORTAL
+
+Build:
+
+- Institution dashboard.
+- User management.
+- Apprentice management.
+- Mentor management.
+- Assessor management.
+- Trade management.
+- Curriculum builder.
+- Learning module management.
+- Video lesson management.
+- Competency framework builder.
+- Assessment rubric configuration.
+- Cohort skill heatmaps.
+- Institution analytics.
+- Reports.
+- Audit logs.
+- Role and permission management.
+
+Create useful visual analytics rather than decorative charts.
+
+---
+
+# 22. DATABASE ARCHITECTURE
+
+Use PostgreSQL with proper relationships, foreign keys, indexes, timestamps and constraints.
+
+Design tables for:
+
+- users
+- student_profiles
+- mentor_profiles
+- assessor_profiles
+- employer_profiles
+- institutions
+- trades
+- learning_pathways
+- modules
+- lessons
+- videos
+- lesson_progress
+- playback_events
+- video_assessments
+- assessment_questions
+- student_responses
+- oral_examinations
+- practical_tasks
+- practical_submissions
+- assessment_reports
+- competency_frameworks
+- competencies
+- student_competencies
+- mentor_reviews
+- certification_records
+- skill_passports
+- passport_verifications
+- integrity_flags
+- learning_risk_records
+- industry_projects
+- project_submissions
+- notifications
+- audit_logs
+
+Use database migrations and avoid hard-coded data dependencies.
+
+---
+
+# 23. BACKEND AND API ARCHITECTURE
+
+Build modular FastAPI services.
+
+Suggested modules:
+
+- Authentication service.
+- User management service.
+- Learning management service.
+- Video playback service.
+- Assessment service.
+- AI evaluation service.
+- Practical evidence service.
+- Oral examination service.
+- Competency service.
+- Mentor verification service.
+- Skill Passport service.
+- QR verification service.
+- Learning analytics service.
+- Notification service.
+- Project recommendation service.
+
+Create versioned REST API endpoints.
+
+Implement:
+
+- Request validation.
+- Consistent response formats.
+- Error handling.
+- Authentication middleware.
+- Role-based authorisation.
+- File upload validation.
+- Pagination.
+- Logging.
+- Database transactions.
+
+Generate API documentation using FastAPI OpenAPI support.
+
+---
+
+# 24. FRONTEND PAGE ARCHITECTURE
+
+Use a clean, modular React structure.
+
+Suggested routes:
+
+Public:
+- /
+- /about
+- /features
+- /how-it-works
+- /login
+- /register
+- /verify/:passportId
+
+Apprentice:
+- /apprentice/dashboard
+- /apprentice/learning
+- /apprentice/learning/:moduleId
+- /apprentice/lesson/:lessonId
+- /apprentice/copilot
+- /apprentice/assessments
+- /apprentice/practical-assessment/:taskId
+- /apprentice/oral-exam/:assessmentId
+- /apprentice/skill-map
+- /apprentice/passport
+- /apprentice/projects
+- /apprentice/history
+
+Mentor:
+- /mentor/dashboard
+- /mentor/apprentices
+- /mentor/apprentices/:studentId
+- /mentor/assessments
+- /mentor/review/:submissionId
+- /mentor/integrity
+- /mentor/analytics
+
+Assessor:
+- /assessor/dashboard
+- /assessor/queue
+- /assessor/review/:submissionId
+- /assessor/history
+
+Employer:
+- /employer/dashboard
+- /employer/candidates
+- /employer/candidates/:candidateId
+- /employer/compare
+- /employer/verification
+
+Admin:
+- /admin/dashboard
+- /admin/users
+- /admin/trades
+- /admin/curriculum
+- /admin/competencies
+- /admin/assessments
+- /admin/analytics
+- /admin/settings
+
+Protect every route using the user's role and backend authorisation.
+
+---
+
+# 25. SECURITY, PRIVACY AND TRUST
+
+Implement:
+
+- Secure password hashing.
+- JWT authentication.
+- Role-based access control.
+- Input validation.
+- Secure API endpoints.
+- Protected video storage.
+- Signed or authorised media access.
+- Consent-based camera and microphone access.
+- Private assessment evidence.
+- Restricted public Skill Passport data.
+- Secure QR verification.
+- Audit logging.
+- File type and file size validation.
+- Rate limiting on sensitive endpoints.
+- Environment-based secrets.
+
+Students must know when their camera or microphone is active and when their recordings are being stored.
+
+---
+
+# 26. DEMO DATA AND DEMONSTRATION EXPERIENCE
+
+Prepare realistic seed data for a complete demonstration.
+
+Use a fictional training institution and fictional apprentice profiles.
+
+Create an Electrician trade demonstration pathway.
+
+Include sample:
+
+- Learning modules.
+- Video lessons.
+- Knowledge checkpoints.
+- Practical tasks.
+- Competencies.
+- Assessment rubrics.
+- Mentor records.
+- Sample assessment history.
+- Skill Passport.
+
+Clearly label sample data as demo data.
+
+Do not present simulated AI analysis as genuine computer vision or genuine AI evaluation.
+
+When an external AI integration is not configured, use a clearly labelled development mode with deterministic sample results.
+
+Never silently substitute fake analysis for a real AI integration.
+
+---
+
+# 27. HACKATHON DEMONSTRATION FLOW
+
+The final product must support this complete demonstration:
+
+1. Open the APPRENTICE IQ landing page.
+2. Register or log in as an apprentice.
+3. Select the Electrician trade.
+4. Open the personalised learning pathway.
+5. Start a lesson.
+6. Demonstrate video playback restrictions.
+7. Reach an embedded lesson assessment.
+8. Answer using voice or text.
+9. Display the evaluation and feedback.
+10. Open the AI Learning Copilot.
+11. Submit a practical demonstration.
+12. Display AI Practical Skill Vision results.
+13. Complete adaptive oral examination.
+14. Display the Skill Gap Intelligence Map.
+15. Log in as the mentor.
+16. Review the student's evidence.
+17. Approve the verified competencies.
+18. Generate the Digital Skill Passport.
+19. Open the employer portal.
+20. Scan or open the QR verification page.
+21. Display the approved competency records.
+22. Show recommended industry projects.
+
+This must be an integrated journey, not a collection of disconnected pages.
+
+---
+
+# 28. DEVELOPMENT EXECUTION PLAN
+
+Do not attempt to generate the entire platform in one unverified step.
+
+First analyse the requirements and prepare:
+
+1. System architecture.
+2. Database ER diagram.
+3. API specification.
+4. Frontend route architecture.
+5. Role-based workflows.
+6. Design system.
+7. Component inventory.
+8. AI integration plan.
+9. Development phases.
+10. Testing plan.
+
+Then implement in phases.
+
+### Phase 1 — Product foundation
+
+- Project setup.
+- Design system.
+- Landing page.
+- Authentication.
+- Database.
+- Role-based dashboards.
+- Navigation.
+
+### Phase 2 — Learning experience
+
+- Trade management.
+- Learning pathways.
+- Modules.
+- Video lessons.
+- Playback tracking.
+- Knowledge checkpoints.
+- Learning Copilot.
+
+### Phase 3 — AI assessment
+
+- Embedded video assessments.
+- Voice responses.
+- Speech transcription.
+- AI evaluation.
+- Oral examinations.
+- Feedback reports.
+
+### Phase 4 — Practical intelligence
+
+- Practical tasks.
+- Video submissions.
+- Video processing.
+- Computer vision integration.
+- Evidence timelines.
+- Assessment rubrics.
+
+### Phase 5 — Verification
+
+- Mentor review.
+- Assessor workflows.
+- Competency approval.
+- Skill Gap Map.
+- Digital Skill Passport.
+- QR verification.
+
+### Phase 6 — Advanced intelligence
+
+- Learning risk engine.
+- Integrity Radar.
+- Mentor Command Centre.
+- Employer portal.
+- Industry project recommendations.
+
+### Phase 7 — Quality and deployment
+
+- Unit testing.
+- API testing.
+- Role permission testing.
+- End-to-end testing.
+- Responsive testing.
+- Security testing.
+- Deployment.
+- Documentation.
+
+After every phase, run the application, test it, fix errors and report what is complete and what remains.
+
+---
+
+# 29. NON-NEGOTIABLE DEVELOPMENT RULES
+
+1. Do not build a static dashboard pretending to be a complete application.
+2. Do not leave buttons or navigation links non-functional.
+3. Do not hard-code fake analytics as real database results.
+4. Do not fake AI outputs.
+5. Do not expose API keys.
+6. Do not use frontend-only role protection.
+7. Do not allow students to approve their own competencies.
+8. Do not issue verified Skill Passports without authorised human approval.
+9. Do not expose private assessment videos publicly.
+10. Do not automatically label students as cheaters.
+11. Do not claim an action was detected if the video does not provide sufficient evidence.
+12. Implement meaningful loading, empty, error and success states.
+13. Use reusable components and clean code.
+14. Maintain a consistent visual design across every role.
+15. Do not sacrifice functionality for decorative animations.
+16. Do not create disconnected demo pages.
+17. Every major feature must have a working implementation or an explicitly labelled integration point.
+18. Prioritise the complete learning-to-verification workflow over the number of features.
+
+---
+
+# 30. FINAL QUALITY EXPECTATION
+
+The finished APPRENTICE IQ website should feel like a premium, globally competitive AI product.
+
+It should have:
+
+- Exceptional UI/UX.
+- A distinctive brand identity.
+- Smooth and purposeful animations.
+- Beautiful data visualisations.
+- Functional role-based dashboards.
+- Reliable backend integration.
+- Proper database architecture.
+- Meaningful AI capabilities.
+- Real practical assessment workflows.
+- Secure evidence management.
+- Human-controlled competency verification.
+- Employer-friendly digital credentials.
+
+The most important three experiences must be outstanding:
+
+**1. AI PRACTICAL SKILL VISION**
+
+A student submits a practical demonstration and sees explainable, timestamp-linked AI observations.
+
+**2. ADAPTIVE AI EXAMINER**
+
+The AI asks intelligent follow-up questions based on the student's actual demonstration.
+
+**3. DIGITAL SKILL PASSPORT**
+
+An employer scans a QR code and can verify the apprentice's approved competencies.
+
+These three experiences should define the product.
+
+Begin by analysing the complete requirements, presenting the architecture and design system, and then implementing the application phase by phase.
+
+Do not stop after generating a plan. Continue implementation until the agreed phase is complete, tested and demonstrable.
+
+**Build APPRENTICE IQ as a real vocational skill intelligence platform — not another online learning management system.**

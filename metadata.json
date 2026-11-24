@@ -1,0 +1,6 @@
+{
+  "name": "APPRENTICE IQ",
+  "description": "Proof of Skill. Not Just Proof of Training. The AI-powered intelligence layer between vocational training and employment.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
